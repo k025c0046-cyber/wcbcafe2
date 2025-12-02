@@ -155,7 +155,7 @@ img {
     .main-nav {
         font-size: 2rem;
     }
-
+}
     /*ヘッダーカバー写真*/
     .sub-cover {
         height: 400px;
@@ -179,12 +179,14 @@ img {
     }
     .post {
         width: 60%;
+        order: 2;
     }
     .ad {
         order: 1;
     }
     .sidebar {
         width: 22%;
+        order: 3
     }
     .sidebar .heading-medium {
         line-height: 1;
