@@ -190,6 +190,7 @@ background-image: url(../images/covernews-s.webp);
 .side-menu a:hover {
     color: #0bd;
 }
+/*desktop-----------------*/
 @media (min-width:800px) {
     .page-title {
         font-size: 5rem;
@@ -247,4 +248,44 @@ background-image: url(../images/covernews-s.webp);
         justify-content: space-between;
         padding-top: 1.5rem;
     }
+    .cover-menu {
+        background-image: url(../images/cover-menu-l.webp);
+    }
+    .grid {
+        gap: 3rem 2rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .item img {
+        margin-bottom: .5rem;
+    }
+    .item p{
+        font-size: 1rem;
+    }
+    .item-big {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .item-big img {
+        height: 94.5%;
+        width: 100%;
+    }
+}
+
+/*MENU-----------------*/
+.cover-menu {
+    background-image: url(../images/cover-menu-s.webp);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+.item img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.item p{
+    font-size: .875rem;
 }
